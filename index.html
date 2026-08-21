@@ -8,15 +8,27 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <main class="page">
-      <section class="intro" aria-labelledby="site-title">
-        <p class="eyebrow">Personal website</p>
-        <h1 id="site-title">Brucy Wu</h1>
-        <p class="summary">
-          This site is live on GitHub Pages. Replace this text with your own
-          introduction, projects, writing, or contact information.
-        </p>
-      </section>
-    </main>
+    <div class="site-shell">
+      <aside class="sidebar" aria-label="Primary navigation">
+        <a class="home-button is-active" href="./" aria-current="page">Home</a>
+        <nav class="main-nav">
+          <a href="me/">Me</a>
+          <a href="blog/">Blog</a>
+          <a href="project/">Project</a>
+          <a href="games/">Games</a>
+        </nav>
+      </aside>
+
+      <main class="page">
+        <section class="intro" aria-labelledby="site-title">
+          <p class="eyebrow">Personal website</p>
+          <h1 id="site-title">Brucy Wu</h1>
+          <p class="summary">
+            Welcome to my personal site. Explore my profile, writing, projects,
+            and games from the menu.
+          </p>
+        </section>
+      </main>
+    </div>
   </body>
 </html>
