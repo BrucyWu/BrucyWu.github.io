@@ -3,31 +3,75 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Brucy Wu</title>
-    <meta name="description" content="Personal website for Brucy Wu.">
+    <title>Always Asking — Digital Dreamer</title>
+    <meta name="description" content="Always Asking, the digital dreamer's camp for projects, writing, and small experiments.">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <div class="site-shell">
       <aside class="sidebar" aria-label="Primary navigation">
-        <a class="home-button is-active" href="./" aria-current="page">Home</a>
+        <a class="home-button is-active" href="./" aria-current="page">Camp</a>
         <nav class="main-nav">
-          <a href="me/">Me</a>
-          <a href="blog/">Blog</a>
-          <a href="project/">Project</a>
-          <a href="games/">Games</a>
+          <a href="me/">Character</a>
+          <a href="project/">Crafted Items</a>
+          <a href="blog/">Scrolls</a>
+          <a href="games/">Arcade</a>
+          <a href="#summon">Summon Me</a>
         </nav>
+        <p class="nav-note">Light a lantern<br>stay curious</p>
       </aside>
 
-      <main class="page">
-        <section class="intro" aria-labelledby="site-title">
-          <p class="eyebrow">Personal website</p>
-          <h1 id="site-title">Brucy Wu</h1>
-          <p class="summary">
-            Welcome to my personal site. Explore my profile, writing, projects,
-            and games from the menu.
-          </p>
+      <main class="page camp-page">
+        <section class="camp-hero" aria-labelledby="site-title">
+          <div class="hero-copy">
+            <p class="hero-kicker">The curious one's camp</p>
+            <h1 class="hero-title" id="site-title">Always <em>Asking</em></h1>
+            <p class="hero-subtitle">Digital Dreamer</p>
+            <p class="hero-summary">A quiet corner for making small things, following strange questions, and leaving a few useful spells behind.</p>
+            <div class="hero-actions">
+              <a class="spell-button" href="project/">Browse crafted items</a>
+              <a class="spell-button ghost" href="#summon">Send a raven</a>
+            </div>
+          </div>
+          <div class="desk-scene" aria-hidden="true"><span class="potion"></span><span class="book"></span></div>
         </section>
+
+        <section class="camp-section" aria-labelledby="paths-title">
+          <div class="section-heading">
+            <p class="eyebrow">Choose a path</p>
+            <h2 id="paths-title">Things worth wandering into</h2>
+            <p>Every shelf holds an ongoing experiment. Start wherever the glow is brightest.</p>
+          </div>
+          <div class="quest-grid">
+            <a class="quest-card" href="me/" data-mark="☼">
+              <span class="card-label">Meet the maker</span>
+              <h3>Character</h3>
+              <p>Notes on the person behind the desk and the quests they keep returning to.</p>
+            </a>
+            <a class="quest-card" href="project/" data-mark="✦">
+              <span class="card-label">Made with care</span>
+              <h3>Crafted Items</h3>
+              <p>Projects, experiments, and occasionally useful artifacts.</p>
+            </a>
+            <a class="quest-card" href="blog/" data-mark="☾">
+              <span class="card-label">Fresh ink</span>
+              <h3>Scrolls</h3>
+              <p>Thoughts, learning logs, and questions still looking for an answer.</p>
+            </a>
+          </div>
+        </section>
+
+        <section class="camp-section" id="summon" aria-labelledby="summon-title">
+          <p class="eyebrow">Open a channel</p>
+          <div class="summon-card">
+            <div>
+              <h2 id="summon-title">Summon Me</h2>
+              <p>The sending circle is being prepared. Contact details will appear here soon; until then, consider this a friendly placeholder at the edge of the map.</p>
+            </div>
+            <div class="summon-sigil" aria-hidden="true">✧</div>
+          </div>
+        </section>
+        <footer class="camp-footer">Always Asking · keep a little wonder nearby</footer>
       </main>
     </div>
   </body>
