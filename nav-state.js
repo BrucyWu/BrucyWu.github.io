@@ -6,12 +6,29 @@
     return;
   }
 
-  const savedPosition = Number.parseFloat(sessionStorage.getItem(storageKey));
-  if (Number.isFinite(savedPosition)) {
-    sidebar.scrollLeft = savedPosition;
-  }
+  const restorePosition = () => {
+    try {
+      const savedPosition = Number.parseFloat(sessionStorage.getItem(storageKey));
+      if (Number.isFinite(savedPosition)) {
+        sidebar.scrollLeft = savedPosition;
+      }
+    } catch {
+      // Navigation should still work when browser storage is unavailable.
+    }
+  };
 
-  const savePosition = () => sessionStorage.setItem(storageKey, String(sidebar.scrollLeft));
+  const savePosition = () => {
+    try {
+      sessionStorage.setItem(storageKey, String(sidebar.scrollLeft));
+    } catch {
+      // Navigation should still work when browser storage is unavailable.
+    }
+  };
+
+  restorePosition();
+  requestAnimationFrame(restorePosition);
+  window.addEventListener("load", restorePosition, { once: true });
   sidebar.addEventListener("scroll", savePosition, { passive: true });
+  sidebar.addEventListener("click", savePosition, { capture: true });
   window.addEventListener("pagehide", savePosition);
 })();
