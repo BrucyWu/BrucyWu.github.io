@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Me | Brucy Wu</title>
-    <meta name="description" content="About Brucy Wu.">
+    <title>Character | Always Asking</title>
+    <meta name="description" content="Character sheet for Brucy Wu, the Digital Dreamer behind Always Asking.">
     <link rel="stylesheet" href="../styles.css">
     <script src="../nav-state.js" defer></script>
   </head>
@@ -22,23 +22,52 @@
         <p class="nav-note">Light a lantern<br>stay curious</p>
       </aside>
 
-      <main class="page content-page">
-        <section class="page-section" aria-labelledby="me-title">
-          <p class="eyebrow">About</p>
-          <h1 id="me-title">Me</h1>
-          <p class="summary">
-            I am Brucy Wu. This page can hold a short bio, interests, skills,
-            contact details, and links to profiles.
-          </p>
-          <div class="content-grid">
-            <article class="panel">
-              <h2>Focus</h2>
-              <p>Personal projects, game ideas, writing, and experiments.</p>
-            </article>
-            <article class="panel">
-              <h2>Contact</h2>
-              <p>Add your email, GitHub, social links, or preferred contact method here.</p>
-            </article>
+      <main class="page content-page character-page">
+        <section class="page-section character-sheet" aria-labelledby="character-title">
+          <header class="character-intro">
+            <p class="eyebrow">Field notes · Character sheet</p>
+            <h1 id="character-title">Character</h1>
+            <p class="summary">A small record for the maker behind the lantern. The finer details are still gathering like ink at the edge of a page.</p>
+          </header>
+
+          <article class="character-card" aria-labelledby="character-name">
+            <div class="character-sigil" aria-hidden="true">BW</div>
+            <div class="character-details">
+              <p class="card-label">Registered wanderer</p>
+              <h2 id="character-name">Brucy Wu</h2>
+              <dl class="character-stats">
+                <div><dt>Class</dt><dd>Digital Dreamer</dd></div>
+                <div><dt>Status</dt><dd>Always Asking</dd></div>
+              </dl>
+            </div>
+            <p class="character-mark" aria-hidden="true">✧</p>
+          </article>
+
+          <div class="character-sections">
+            <section class="character-compartment" aria-labelledby="quest-title">
+              <p class="compartment-mark" aria-hidden="true">☼</p>
+              <div>
+                <p class="card-label">Open slot</p>
+                <h2 id="quest-title">Current Quest</h2>
+                <p>A future page for the work, wonder, or unanswered question currently calling loudest.</p>
+              </div>
+            </section>
+            <section class="character-compartment" aria-labelledby="curiosities-title">
+              <p class="compartment-mark" aria-hidden="true">✦</p>
+              <div>
+                <p class="card-label">Open slot</p>
+                <h2 id="curiosities-title">Curiosities</h2>
+                <p>A softly lit cabinet reserved for favourite rabbit holes, inspirations, and passing fascinations.</p>
+              </div>
+            </section>
+            <section class="character-compartment" aria-labelledby="inventory-title">
+              <p class="compartment-mark" aria-hidden="true">☾</p>
+              <div>
+                <p class="card-label">Open slot</p>
+                <h2 id="inventory-title">Inventory</h2>
+                <p>A shelf waiting for trusted tools, tiny comforts, and artifacts worth keeping close.</p>
+              </div>
+            </section>
           </div>
         </section>
       </main>
