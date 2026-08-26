@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Project | Brucy Wu</title>
-    <meta name="description" content="Projects by Brucy Wu.">
+    <title>Crafted Items | Always Asking</title>
+    <meta name="description" content="The workshop and future artifact catalogue for Always Asking.">
     <link rel="stylesheet" href="../styles.css">
     <script src="../nav-state.js" defer></script>
   </head>
@@ -22,21 +22,41 @@
         <p class="nav-note">Light a lantern<br>stay curious</p>
       </aside>
 
-      <main class="page content-page">
-        <section class="page-section" aria-labelledby="project-title">
-          <p class="eyebrow">Work</p>
-          <h1 id="project-title">Project</h1>
-          <p class="summary">
-            A place to collect software, creative work, research, and experiments.
-          </p>
-          <div class="content-grid">
-            <article class="panel">
-              <h2>Personal Website</h2>
-              <p>A responsive GitHub Pages site with simple navigation.</p>
+      <main class="page content-page crafted-page">
+        <section class="page-section workshop-catalogue" aria-labelledby="crafted-title">
+          <header class="workshop-header">
+            <p class="eyebrow">The workbench · Artifact catalogue</p>
+            <h1 id="crafted-title">Crafted Items</h1>
+            <p class="summary">The workshop is set, the shelves are dusted, and a few good places are waiting for ideas to become objects worth keeping.</p>
+          </header>
+
+          <section class="workshop-empty" aria-labelledby="workshop-note-title">
+            <p class="workshop-spark" aria-hidden="true">✦</p>
+            <div>
+              <p class="card-label">Workshop note</p>
+              <h2 id="workshop-note-title">Nothing on the bench—yet.</h2>
+              <p>When a future project is ready to be named, it can take its place here with its story, shape, and a little room to glow.</p>
+            </div>
+          </section>
+
+          <div class="artifact-grid" aria-label="Future project slots">
+            <article class="artifact-slot artifact-slot--amber">
+              <p class="artifact-emblem" aria-hidden="true">✧</p>
+              <p class="card-label">Shelf one</p>
+              <h2>Awaiting Artifact</h2>
+              <p>A labelled space for the next finished thing to leave the workbench.</p>
             </article>
-            <article class="panel">
-              <h2>Next Project</h2>
-              <p>Add a project description, stack, links, and screenshots.</p>
+            <article class="artifact-slot artifact-slot--blue">
+              <p class="artifact-emblem" aria-hidden="true">⌬</p>
+              <p class="card-label">Shelf two</p>
+              <h2>In the Workshop</h2>
+              <p>A protected place for an idea still gathering its pieces and purpose.</p>
+            </article>
+            <article class="artifact-slot artifact-slot--violet">
+              <p class="artifact-emblem" aria-hidden="true">☾</p>
+              <p class="card-label">Shelf three</p>
+              <h2>Reserved for Wonder</h2>
+              <p>A small open alcove for the curious thing that has not arrived yet.</p>
             </article>
           </div>
         </section>
