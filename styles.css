@@ -1,7 +1,7 @@
 :root {
   color-scheme: light;
   --paper: #f6f0df; --paper-deep: #eadbbb; --card: rgba(255, 251, 239, .86);
-  --ink: #352d27; --muted: #75695b; --amber: #b86c24; --amber-light: #efc77b;
+  --ink: #352d27; --muted: #75695b; --amber: #a55318; --amber-light: #efc77b;
   --sage: #80946e; --sage-deep: #566d52; --blue: #6098ad; --violet: #8873a1;
   --line: rgba(91, 66, 43, .2); --shadow: 0 16px 38px rgba(97, 69, 38, .13), 0 3px 8px rgba(97, 69, 38, .08); --sidebar-width: 246px;
   font-family: Georgia, Cambria, "Times New Roman", serif; color: var(--ink); background: var(--paper);
@@ -11,6 +11,7 @@ html { scroll-behavior: smooth; }
 body { min-width: 320px; min-height: 100vh; margin: 0; overflow-x: hidden; background: radial-gradient(circle at 12% 5%, rgba(239,199,123,.37), transparent 22rem), radial-gradient(circle at 92% 82%, rgba(128,148,110,.2), transparent 26rem), repeating-linear-gradient(0deg, transparent 0 3px, rgba(115,87,54,.018) 3px 4px), var(--paper); }
 a { color: var(--sage-deep); } a:hover { color: var(--amber); }
 :focus-visible { outline: 3px solid var(--blue); outline-offset: 4px; }
+.skip-link { position: fixed; z-index: 20; top: 12px; left: 12px; padding: 10px 14px; border-radius: 8px; background: var(--ink); color: #fffaf1; font-family: ui-rounded, "Avenir Next", "Trebuchet MS", sans-serif; font-weight: 800; text-decoration: none; transform: translateY(-160%); transition: transform 160ms ease; }.skip-link:focus { transform: translateY(0); }
 .site-shell { min-height: 100vh; }
 .sidebar { position: fixed; inset: 0 auto 0 0; z-index: 10; width: var(--sidebar-width); display: flex; flex-direction: column; gap: 26px; padding: 28px 18px; border-right: 1px solid var(--line); background: rgba(250,245,230,.82); box-shadow: 6px 0 24px rgba(97,69,38,.05); backdrop-filter: blur(14px); }
 .sidebar::before { content: "✦  ·  ✧  ·  ✦"; color: var(--amber); font-size: .7rem; letter-spacing: .22em; text-align: center; }
