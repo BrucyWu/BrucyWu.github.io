@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Games | Brucy Wu</title>
-    <meta name="description" content="Games by Brucy Wu.">
+    <title>Arcade | Always Asking</title>
+    <meta name="description" content="A future arcade for playful experiments and interactive things at Always Asking.">
     <link rel="stylesheet" href="../styles.css">
     <script src="../nav-state.js" defer></script>
   </head>
@@ -23,14 +23,43 @@
         <p class="nav-note">Light a lantern<br>stay curious</p>
       </aside>
 
-      <main class="page content-page" id="main-content">
-        <section class="page-section" aria-labelledby="games-title">
-          <p class="eyebrow">Play</p>
-          <h1 id="games-title">Games</h1>
-          <p class="summary">
-            Game prototypes, tabletop material, and interactive experiments can
-            be organized here.
-          </p>
+      <main class="page content-page arcade-page" id="main-content">
+        <section class="page-section arcade-room" aria-labelledby="arcade-title">
+          <header class="arcade-header">
+            <p class="eyebrow">After-hours arcade · Play room</p>
+            <h1 id="arcade-title">Arcade</h1>
+            <p class="summary">A future corner for prototypes, playful experiments, and interactive curiosities—currently humming quietly in sleep mode.</p>
+          </header>
+
+          <section class="arcade-empty" aria-labelledby="arcade-note-title">
+            <div class="sleeping-machine" aria-hidden="true"><span></span><span></span><span></span></div>
+            <div>
+              <p class="card-label">Cabinet status · Resting</p>
+              <h2 id="arcade-note-title">The machines are dreaming.</h2>
+              <p>No games are awake just yet. When something playful is ready to accept a coin—or a curious click—this room will light up.</p>
+            </div>
+          </section>
+
+          <div class="game-bays" aria-label="Future game slots">
+            <section class="game-bay game-bay--amber" aria-labelledby="curiosity-title">
+              <p class="bay-count">01</p>
+              <p class="bay-icon" aria-hidden="true">+</p>
+              <h2 id="curiosity-title">Insert Curiosity</h2>
+              <p>An open cabinet waiting for the first playful idea to find its controls.</p>
+            </section>
+            <section class="game-bay game-bay--blue" aria-labelledby="quest-loading-title">
+              <p class="bay-count">02</p>
+              <p class="bay-icon" aria-hidden="true">⌁</p>
+              <h2 id="quest-loading-title">Loading Quest</h2>
+              <p>A game bay held in reserve for an adventure that is still choosing its path.</p>
+            </section>
+            <section class="game-bay game-bay--violet" aria-labelledby="score-title">
+              <p class="bay-count">03</p>
+              <p class="bay-icon" aria-hidden="true">★</p>
+              <h2 id="score-title">High Score Pending</h2>
+              <p>A blinking little space for a future experiment and whoever dares to play it.</p>
+            </section>
+          </div>
         </section>
       </main>
     </div>
