@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Blog | Brucy Wu</title>
-    <meta name="description" content="Blog posts by Brucy Wu.">
+    <title>Scrolls | Always Asking</title>
+    <meta name="description" content="A quiet future archive for writing, learning notes, and strange questions at Always Asking.">
     <link rel="stylesheet" href="../styles.css">
     <script src="../nav-state.js" defer></script>
   </head>
@@ -23,19 +23,42 @@
         <p class="nav-note">Light a lantern<br>stay curious</p>
       </aside>
 
-      <main class="page content-page" id="main-content">
-        <section class="page-section" aria-labelledby="blog-title">
-          <p class="eyebrow">Writing</p>
-          <h1 id="blog-title">Blog</h1>
-          <p class="summary">
-            Notes, essays, updates, and learning logs can live here.
-          </p>
-          <div class="list">
-            <article class="list-item">
-              <span>Coming soon</span>
-              <h2>First post</h2>
-              <p>Add a short preview for your latest article.</p>
-            </article>
+      <main class="page content-page archive-page" id="main-content">
+        <section class="page-section scroll-archive" aria-labelledby="scrolls-title">
+          <header class="archive-header">
+            <p class="eyebrow">Quiet archive · Writing desk</p>
+            <h1 id="scrolls-title">Scrolls</h1>
+            <p class="summary">A future home for notes written slowly, questions left open on purpose, and sparks of thought worth returning to.</p>
+          </header>
+
+          <section class="archive-empty" aria-labelledby="archive-note-title">
+            <div class="archive-seal" aria-hidden="true">✦</div>
+            <div>
+              <p class="card-label">Archive notice</p>
+              <h2 id="archive-note-title">The ink is waiting.</h2>
+              <p>No scrolls have been unrolled here yet. When a thought is ready for a margin, a title, and a little quiet, it will find its shelf.</p>
+            </div>
+          </section>
+
+          <div class="scroll-shelves" aria-label="Future writing categories">
+            <section class="scroll-slot scroll-slot--notes" aria-labelledby="field-notes-title">
+              <p class="scroll-tab">Shelf I</p>
+              <p class="scroll-glyph" aria-hidden="true">✎</p>
+              <h2 id="field-notes-title">Field Notes</h2>
+              <p>A resting place for observations, learning notes, and things noticed along the way.</p>
+            </section>
+            <section class="scroll-slot scroll-slot--questions" aria-labelledby="questions-title">
+              <p class="scroll-tab">Shelf II</p>
+              <p class="scroll-glyph" aria-hidden="true">?</p>
+              <h2 id="questions-title">Unanswered Questions</h2>
+              <p>A dedicated margin for the mysteries that deserve more time than a quick answer.</p>
+            </section>
+            <section class="scroll-slot scroll-slot--ink" aria-labelledby="fresh-ink-title">
+              <p class="scroll-tab">Shelf III</p>
+              <p class="scroll-glyph" aria-hidden="true">☾</p>
+              <h2 id="fresh-ink-title">Fresh Ink</h2>
+              <p>A clear page held open for future writing, whenever the right words arrive.</p>
+            </section>
           </div>
         </section>
       </main>
