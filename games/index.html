@@ -6,19 +6,20 @@
     <title>Arcade | Always Asking</title>
     <meta name="description" content="A future arcade for playful experiments and interactive things at Always Asking.">
     <link rel="stylesheet" href="../styles.css">
-    <script src="../nav-state.js" defer></script>
+    <script src="../menu.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
     <div class="site-shell">
       <aside class="sidebar" aria-label="Primary navigation">
         <a class="home-button" href="../">Camp</a>
-        <nav class="main-nav">
+        <nav class="main-nav" id="primary-menu">
           <a href="../me/">Character</a>
           <a href="../project/">Crafted Items</a>
           <a href="../blog/">Scrolls</a>
           <a class="is-active" href="../games/" aria-current="page">Arcade</a>
         </nav>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Open menu">☰</button>
       </aside>
 
       <main class="page content-page arcade-page" id="main-content">
