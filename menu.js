@@ -49,14 +49,26 @@
   }
 
   let lastY = window.scrollY;
+  let travel = 0;
 
   window.addEventListener("scroll", () => {
     const y = window.scrollY;
     const delta = y - lastY;
+    lastY = y;
 
     if (y <= 4) {
       sidebar.classList.remove("bar-pinned", "bar-hidden");
-    } else if (delta <= -4) {
+      travel = 0;
+      return;
+    }
+
+    if (delta === 0) {
+      return;
+    }
+
+    travel = (delta > 0) === (travel > 0) ? travel + delta : delta;
+
+    if (travel <= -12) {
       if (sidebar.classList.contains("bar-pinned")) {
         sidebar.classList.remove("bar-hidden");
       } else {
@@ -65,13 +77,11 @@
           requestAnimationFrame(() => sidebar.classList.remove("bar-hidden"));
         });
       }
-    } else if (delta >= 4 && sidebar.classList.contains("bar-pinned")) {
+      travel = 0;
+    } else if (travel >= 12 && sidebar.classList.contains("bar-pinned")) {
       sidebar.classList.add("bar-hidden");
       setOpen(false);
-    } else {
-      return;
+      travel = 0;
     }
-
-    lastY = y;
   }, { passive: true });
 })();
