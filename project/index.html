@@ -3,40 +3,72 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Project | Brucy Wu</title>
-    <meta name="description" content="Projects by Brucy Wu.">
+    <title>Crafted Items | Always Asking</title>
+    <meta name="description" content="The workshop and future artifact catalogue for Always Asking.">
     <link rel="stylesheet" href="../styles.css">
+    <script src="../menu.js" defer></script>
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <div class="site-shell">
       <aside class="sidebar" aria-label="Primary navigation">
-        <a class="home-button" href="../">Home</a>
-        <nav class="main-nav">
-          <a href="../me/">Me</a>
-          <a href="../blog/">Blog</a>
-          <a class="is-active" href="../project/" aria-current="page">Project</a>
-          <a href="../games/">Games</a>
+        <a class="home-button" href="../">Camp</a>
+        <nav class="main-nav" id="primary-menu">
+          <a href="../me/">Character</a>
+          <a class="is-active" href="../project/" aria-current="page">Crafted Items</a>
+          <a href="../blog/">Scrolls</a>
+          <a href="../games/">Arcade</a>
         </nav>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Open menu">☰</button>
       </aside>
 
-      <main class="page content-page">
-        <section class="page-section" aria-labelledby="project-title">
-          <p class="eyebrow">Work</p>
-          <h1 id="project-title">Project</h1>
-          <p class="summary">
-            A place to collect software, creative work, research, and experiments.
-          </p>
-          <div class="content-grid">
-            <article class="panel">
-              <h2>Personal Website</h2>
-              <p>A responsive GitHub Pages site with simple navigation.</p>
+      <main class="page content-page crafted-page" id="main-content">
+        <section class="page-section workshop-catalogue" aria-labelledby="crafted-title">
+          <header class="workshop-header">
+            <p class="eyebrow">The workbench · Artifact catalogue</p>
+            <h1 id="crafted-title">Crafted Items</h1>
+            <p class="summary">The workshop is set, the shelves are dusted, and a few good places are waiting for ideas to become objects worth keeping.</p>
+          </header>
+
+          <section class="workshop-empty" aria-labelledby="workshop-note-title">
+            <p class="workshop-spark" aria-hidden="true">✦</p>
+            <div>
+              <p class="card-label">Workshop note</p>
+              <h2 id="workshop-note-title">Nothing on the bench—yet.</h2>
+              <p>When a future project is ready to be named, it can take its place here with its story, shape, and a little room to glow.</p>
+            </div>
+          </section>
+
+          <div class="artifact-grid" aria-label="Future project slots">
+            <article class="artifact-slot artifact-slot--amber">
+              <p class="artifact-emblem" aria-hidden="true">✧</p>
+              <p class="card-label">Shelf one</p>
+              <h2>Awaiting Artifact</h2>
+              <p>A labelled space for the next finished thing to leave the workbench.</p>
             </article>
-            <article class="panel">
-              <h2>Next Project</h2>
-              <p>Add a project description, stack, links, and screenshots.</p>
+            <article class="artifact-slot artifact-slot--blue">
+              <p class="artifact-emblem" aria-hidden="true">⌬</p>
+              <p class="card-label">Shelf two</p>
+              <h2>In the Workshop</h2>
+              <p>A protected place for an idea still gathering its pieces and purpose.</p>
+            </article>
+            <article class="artifact-slot artifact-slot--violet">
+              <p class="artifact-emblem" aria-hidden="true">☾</p>
+              <p class="card-label">Shelf three</p>
+              <h2>Reserved for Wonder</h2>
+              <p>A small open alcove for the curious thing that has not arrived yet.</p>
             </article>
           </div>
         </section>
+        <footer class="site-footer" id="summon">
+          <div class="summon-icons">
+            <a class="summon-icon" href="#summon" title="Email — coming soon" aria-label="Email — coming soon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a>
+            <a class="summon-icon" href="#summon" title="GitHub — coming soon" aria-label="GitHub — coming soon"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+            <a class="summon-icon" href="#summon" title="RSS — coming soon" aria-label="RSS — coming soon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5" cy="19" r="1.6" fill="currentColor" stroke="none"/><path d="M3 9.5a11.5 11.5 0 0 1 11.5 11.5M3 3a18 18 0 0 1 18 18"/></svg></a>
+          </div>
+          <p>© 2026 By Brucy Wu</p>
+          <p>Always Asking <span class="footer-separator" aria-hidden="true">|</span> keep a little wonder nearby</p>
+        </footer>
       </main>
     </div>
   </body>
